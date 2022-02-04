@@ -1,2 +1,21 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Jungle's Statistics</h1>
+<div class="container">
+  <table class="table table-bordered">
+    <row>
+      <tr>
+      <th class="text-center status">
+      <%= link_to 'Product Count', controller: 'admin/products' %>
+      </th>
+      <td class="text-center status"><%= @product_count %></td>
+      </tr>
+    </row>
+    <row>
+      <tr>
+      <th class="text-center status">
+      <%= link_to 'Category Count', controller: 'admin/products' %>
+      </th>
+      <td class="text-center status"><%= @category_count %></td>
+      </tr>
+    </row>
+  </table>
+</div>
